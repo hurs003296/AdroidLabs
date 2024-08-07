@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:text="I love Android"
+            android:textSize="30dp"
+            android:gravity="fill" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flag"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch on/off"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1" />
+
+        <Button
+            android:id="@+id/button_press_me_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press Me"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1" />
+
+        <CheckBox
+            android:id="@+id/checkbox_check_this_out_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check this out!"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1" />
+
+        <EditText
+            android:id="@+id/edittext_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="I love Android"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="2" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
